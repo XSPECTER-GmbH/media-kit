@@ -58,11 +58,11 @@ task downloadDependencies(type: Exec) {
 
         // Download all *.jar dependencies & verify their MD5 checksums.
         def filesToDownload = [
-            ["url": "https://github.com/media-kit/libmpv-android-video-build/releases/download/v1.1.6/full-arm64-v8a.jar", "md5": "54475d7c87b2dd8e922ed358accfdd58", "destination": file("$buildDir/v1.1.6/full-arm64-v8a.jar")],
-            ["url": "https://github.com/media-kit/libmpv-android-video-build/releases/download/v1.1.6/full-armeabi-v7a.jar", "md5": "0b9f69a148fa7515dd65f814c1d0cd7d", "destination": file("$buildDir/v1.1.6/full-armeabi-v7a.jar")],
-            ["url": "https://github.com/media-kit/libmpv-android-video-build/releases/download/v1.1.6/full-x86_64.jar", "md5": "00fe4dc03965f1acc7906fda53beb03f", "destination": file("$buildDir/v1.1.6/full-x86_64.jar")],
-            ["url": "https://github.com/media-kit/libmpv-android-video-build/releases/download/v1.1.6/full-x86.jar", "md5": "37c5068af72902f1e804d0f2cd2a9654", "destination": file("$buildDir/v1.1.6/full-x86.jar")]
-        ]
+            ["url": "https://github.com/hienXspecter/libmpv-android-video-build/releases/download/v1.1.7/full-arm64-v8a.jar", "md5": "072d5c30b41c2a3c4088f609346b6120", "destination": file("$buildDir/v1.1.7/full-arm64-v8a.jar")],
+            ["url": "https://github.com/hienXspecter/libmpv-android-video-build/releases/download/v1.1.7/full-armeabi-v7a.jar", "md5": "4ec405f092327e8f993b49a19376d5b0", "destination": file("$buildDir/v1.1.7/full-armeabi-v7a.jar")],
+            ["url": "https://github.com/hienXspecter/libmpv-android-video-build/releases/download/v1.1.7/full-x86_64.jar", "md5": "1f8ca7288e0414111db270b4d0d1967c", "destination": file("$buildDir/v1.1.7/full-x86_64.jar")],
+            ["url": "https://github.com/hienXspecter/libmpv-android-video-build/releases/download/v1.1.7/full-x86.jar", "md5": "8c3719dd9b4c9349446a675c472afbda", "destination": file("$buildDir/v1.1.7/full-x86.jar")]
+        ] 
 
         filesToDownload.each { fileInfo ->
             def destFile = fileInfo.destination
